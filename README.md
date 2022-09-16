@@ -1,7 +1,7 @@
 # coffeeDelivery-2022-ignite
 <img alt="CoffeeDelivery" title="Plant Manager" src="https://github.com/IgorSaturno/coffeeDelivery-2022-ignite/raw/master/public/bannercoffeedelivery.png" />
 
-Neste projeto proposto pela Rocketset no curso Ignite, fui desáfiado a desenvolver uma aplicação do total zero, desenvolvendo as seguintes funcionalidades:
+### Neste projeto proposto pela Rocketset no curso Ignite, fui desáfiado a desenvolver uma aplicação do total zero, desenvolvendo as seguintes funcionalidades:
 * Listagem de produtos (cafés) disponíveis para compra
 * dicionar uma quantidade específicas de itens no carrinho
 * Aumentar ou remover a quantidade de itens no carrinho
@@ -9,7 +9,7 @@ Neste projeto proposto pela Rocketset no curso Ignite, fui desáfiado a desenvol
 * Exibir o total de itens no carrinho no Header
 * Exibir o valor total da soma de itens no carrinho multiplicados pelo valor 
 
-E relembrar alguns conceitos:
+### E relembrar alguns conceitos:
 * Estados
 * ContextAPI
 * LocalStorage
