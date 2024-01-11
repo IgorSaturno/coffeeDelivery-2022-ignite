@@ -53,6 +53,6 @@ margin-top: 4.125rem;
 
     @media (max-width: 768px) {
         grid-template-columns: 1fr;
-        padding: 0 0.5rem;
+        padding: 0.5rem;
     }
 `
