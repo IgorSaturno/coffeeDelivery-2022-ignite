@@ -4,7 +4,6 @@ import { CartContextProvider } from "./contexts/CartContext";
 import { Router } from "./Routes";
 import { GlobalStyle } from "./styles/global";
 import { defaultTheme } from "./styles/theme/default";
-
 function App() {
   return (
     <ThemeProvider theme={defaultTheme}>

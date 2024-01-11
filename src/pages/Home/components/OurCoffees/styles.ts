@@ -12,4 +12,10 @@ export const CoffeeList = styled.div`
     column-gap: 2rem;
     row-gap: 2.5rem;
     margin-top: 3.5rem;
+
+    @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    font-size: 87.5%;
+    padding: 1.827rem;
+}
 `
