@@ -7,7 +7,6 @@ import { AddressForm } from "./AddressForm";
 import { PaymentMethodOptions } from "./PaymentMethodOptions";
 export function CompleteOrderForm() {
 const theme = useTheme();
-console.log(theme);
 
     return(
         <CompleteOrderFormContainer className="container">
