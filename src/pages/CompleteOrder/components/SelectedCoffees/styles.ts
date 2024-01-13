@@ -1,17 +1,23 @@
 import styled from "styled-components";
-import { SectionBaseStyle } from "../../sttyles";
+import { SectionBaseStyle } from "../../styles";
 
 export const SelectedCoffeesContainer = styled.div`
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
     width: 40rem;
+    @media (max-width: 768px) {
+        width: 22rem;
+    }
 `
 
 export const DetailsContainer = styled(SectionBaseStyle)`
     border-radius: 6px 44px 6px 44px;
     display: flex;
     flex-direction: column;
+    @media (max-width: 768px) {
+        margin-bottom: 1rem;
+    }
 `
 
 export const ConfirmationSectionContainer = styled.section `

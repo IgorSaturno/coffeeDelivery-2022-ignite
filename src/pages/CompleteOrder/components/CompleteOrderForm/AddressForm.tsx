@@ -19,11 +19,11 @@ export function AddressForm() {
         <AddressFormContainer>
             <Input placeholder="CEP" type="number" className="cep" {...register("cep")} error={errors.cep?.message} />
             <Input placeholder="Rua" className="street" {...register("street")} error={errors.street?.message} />
-            <Input placeholder="Numero" type="number" {...register("number")} error={errors.number?.message} />
+            <Input placeholder="Numero" className="number" type="number" {...register("number")} error={errors.number?.message} />
             <Input placeholder="Complemento" className="complement" {...register("complement")} error={errors.complement?.message} rightText="Opicional"/>
-            <Input placeholder="Bairro" {...register("district")} error={errors.district?.message} />
-            <Input placeholder="Cidade" {...register("city")} error={errors.city?.message} />
-            <Input placeholder="UF" {...register("uf")} error={errors.uf?.message} />
+            <Input placeholder="Bairro" className="neighborhood" {...register("district")} error={errors.district?.message} />
+            <Input placeholder="Cidade" className="city" {...register("city")} error={errors.city?.message} />
+            <Input placeholder="UF" className="uf" {...register("uf")} error={errors.uf?.message} />
         </AddressFormContainer>
     )
 }

@@ -2,6 +2,7 @@ import styled from "styled-components";
 import introBackgroundImg from "../../../../assets/Background.svg"
 import { rgba } from "polished"
 import { TitleText } from "../../../../components/typography";
+import { device } from "../../../../styles/theme/default";
 
 export const IntroContainer = styled.section`
     width: 100%;
@@ -19,9 +20,8 @@ export const IntroContainer = styled.section`
     align-items: center;
     justify-content: center;
 
-    @media (max-width: 768px) {
-    grid-template-columns: 1fr;
-    height: 25rem;
+    @media ${device.mobileS} {
+        grid-template-columns: 1fr;
     }
 `;
 
@@ -30,7 +30,7 @@ export const IntroContent = styled.div`
     align-items: center;
     justify-content: space-between;
     gap: 3.5rem;
-    @media (max-width: 768px) {
+    @media ${device.mobileS} {
         img {
             display: none;
         }
@@ -39,9 +39,9 @@ export const IntroContent = styled.div`
 
 export const IntroTitle = styled(TitleText)`
     margin-bottom: 1rem;
-    @media (max-width: 768px) {
-        font-size: 30px;
-    }
+    @media ${device.mobileS} {
+            font-size: 32px;
+        }
 `;
 
 export const BenefitsContainer = styled.div`

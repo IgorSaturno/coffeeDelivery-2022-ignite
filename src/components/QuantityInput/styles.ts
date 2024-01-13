@@ -26,6 +26,10 @@ export const QuantityInputContainer = styled.div<QuantityInputContainerProps>`
             outline: none; 
         }
 
+        @media (max-width: 768px) {
+            min-width: 0.800rem;
+        }
+
     }
 
     ${({size}) => size === "medium" && css`

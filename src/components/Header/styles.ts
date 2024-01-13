@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components";
+import { device } from "../../styles/theme/default";
 
 export const HeaderContainer = styled.header`
     width: 100%;
@@ -12,14 +13,32 @@ export const HeaderContainer = styled.header`
     left: 0;
     z-index: 5;
 
+    @media ${device.mobileS} { 
+        height: 4.5rem;
+    }
+
+    @media ${device.mobileM} { 
+        height: 4.5rem;
+    }
+
+    @media ${device.mobileL} { 
+        height: 4.5rem;
+    }
+
     > div {
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: space-between;
         
-        @media (max-width: 768px) {
-            padding: 0 0.5rem;
+        @media (max-width: 290px){
+            flex-direction: column;
+            padding: 0 1rem;
+        }
+
+        @media ${device.mobileS}{
+            /* flex-direction: column; */
+            padding: 0 1rem;
         }
     }
 

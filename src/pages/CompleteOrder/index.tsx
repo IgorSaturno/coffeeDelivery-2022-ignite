@@ -1,6 +1,6 @@
 import { CompleteOrderForm } from "./components/CompleteOrderForm";
 import { SelectedCoffees } from "./components/SelectedCoffees";
-import { CompleteOrderContainer } from "./sttyles";
+import { CompleteOrderContainer } from "./styles";
 import * as zod from 'zod';
 import { zodResolver} from '@hookform/resolvers/zod';
 import {useForm, FormProvider} from 'react-hook-form'
