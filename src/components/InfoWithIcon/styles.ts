@@ -14,6 +14,7 @@ export const IconContainer = styled.div<IconContainerProps>`
     width: 2rem;
     height: 2rem;
     border-radius: 50%;
+    flex-shrink: 0;
 
     background: ${({iconBg}) => iconBg};
     color: ${(props) => props.theme.colors["base-white"]};

@@ -28,6 +28,8 @@ export const QuantityInputContainer = styled.div<QuantityInputContainerProps>`
 
         @media (max-width: 768px) {
             min-width: 0.800rem;
+            flex-grow: 1;
+            
         }
 
     }

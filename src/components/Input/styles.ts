@@ -57,4 +57,7 @@ export const RightText = styled.p`
     margin-right: 0.75rem;
     font-style: italic;
     color: ${(props) => props.theme.colors["base-label"]};
+    @media (max-width: 768px) {
+        display: none;
+    }
 `

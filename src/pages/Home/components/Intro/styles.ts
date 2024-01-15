@@ -6,7 +6,7 @@ import { device } from "../../../../styles/theme/default";
 
 export const IntroContainer = styled.section`
     width: 100%;
-    height: 34rem;
+    /* height: 34rem; */
     background: ${({theme}) => `url(${introBackgroundImg}) no-repeat center,
     linear-gradient(
         8deg,
@@ -19,29 +19,34 @@ export const IntroContainer = styled.section`
     display: flex;
     align-items: center;
     justify-content: center;
-
-    @media ${device.mobileS} {
-        grid-template-columns: 1fr;
-    }
+    
 `;
 
 export const IntroContent = styled.div`
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     gap: 3.5rem;
-    @media ${device.mobileS} {
+    @media (max-width: 768px) {
         img {
             display: none;
         }
+    }
+    @media (max-width: 1120px) {
+        flex-wrap: wrap;  
+        /* img {
+            display: none;
+        }  */
     }
 `;
 
 export const IntroTitle = styled(TitleText)`
     margin-bottom: 1rem;
-    @media ${device.mobileS} {
-            font-size: 32px;
+    @media (max-width: 768px) {
+            font-size: 1.70rem;
         }
+
+        
 `;
 
 export const BenefitsContainer = styled.div`
@@ -52,7 +57,7 @@ row-gap: 1.25rem;
 margin-top: 4.125rem;
 
     @media (max-width: 768px) {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 250px));
         padding: 0.5rem;
     }
 `

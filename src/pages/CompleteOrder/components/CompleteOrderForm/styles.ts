@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { SectionBaseStyle } from "../../styles";
-import { device } from "../../../../styles/theme/default";
 
 export const CompleteOrderFormContainer = styled.div`
     display: flex;
@@ -30,17 +29,20 @@ row-gap: 1rem;
 grid-auto-flow: dense;
     @media (max-width: 768px) {
         grid-template-columns: 1fr;
-        
     }
 
 .cep {
-    grid-column: span 2;
+    grid-column: span 3;
     max-width: 12.5rem;
+    /* @media (max-width: 768px) {
+        grid-column: span 2;
+    } */
 }
 
 .street {
   grid-column: span 3;
     @media (max-width: 768px) {
+        grid-column: span 3;
         max-width: 20rem;
     }
 }
@@ -56,28 +58,30 @@ grid-auto-flow: dense;
 .complement {
     grid-column: span 2;
     @media (max-width: 768px) {
-        max-width: 12.5rem;
+        max-width: 10.5rem;
+        grid-column: span 1;
     }
 }
 
 .neighborhood {
     
     @media (max-width: 768px) {
-        grid-column: span 1;
+        grid-column: span 3;
     }
 }
 
 .city {
     @media (max-width: 768px) {
-        grid-column: span 1;
+        grid-column: span 2;
     }
 }
 
-/* .uf {
+.uf {
     @media (max-width: 768px) {
-        grid-column: span 4;
+        grid-column: span 1;
+        max-width: 4rem;
     }
-} */
+}
 `
 
 export const PaymnentMethodOptionsContainer = styled.div`

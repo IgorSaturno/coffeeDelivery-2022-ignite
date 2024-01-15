@@ -8,14 +8,9 @@ export const OurCoffeesContainer = styled.section`
 export const CoffeeList = styled.div`
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 250px));
     column-gap: 2rem;
     row-gap: 2.5rem;
     margin-top: 3.5rem;
-
-    @media (max-width: 768px) {
-    grid-template-columns: 1fr;
-    font-size: 87.5%;
-    padding: 1.827rem;
-}
 `
