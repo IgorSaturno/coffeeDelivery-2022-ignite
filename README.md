@@ -29,4 +29,4 @@
 * React Hook Form
 * Validações de formulário com Zod
 
-Link do projeto: https://coffeedeliverysite.netlify.app/
+  Link do projeto: https://coffeedeliverysite.netlify.app/
